@@ -1,0 +1,5 @@
+# bytea zip data extractor
+comment = 'Bytea zip data extractor, for exmaple for Open document format (ODF) files such as ods, odt etc.'
+default_version = '1.0'
+module_pathname = '$libdir/bytea_unzip'
+relocatable = true

@@ -1,0 +1,45 @@
+{
+   "name": "bytea_unzip",
+   "abstract": "Unzipper for PotgreSQL bytea data, for example ODF data extractor",
+   "description": "PostgreSQL extension which allow to unzip a file data from bytea data in PostgreSQL.",
+   "version": "1.0.0",
+   "maintainer": "",
+   "license": "postgresql",
+   "provides": {
+      "sqlite_fdw": {
+         "abstract": "Zip data extractor for PotgreSQL bytea data",
+         "file": "bytea_unzip.c",
+         "docfile": "README.md",
+         "version": "1.0.0"
+      }
+   },
+   "prereqs": {
+      "runtime": {
+         "requires": {
+            "PostgreSQL": "9.6.0"
+         }
+      }
+   },
+   "resources": {
+      "bugtracker": {
+         "web": "https://github.com/*********/issues/"
+      },
+      "repository": {
+        "url":  "git://github.com/*******.git",
+        "web":  "https://github.com/********/",
+        "type": "git"
+      }
+   },
+   "generated_by": "",
+   "meta-spec": {
+      "version": "1.0.0",
+      "url": "http://pgxn.org/meta/spec.txt"
+   },
+   "tags": [
+      "zip",
+      "odf",
+      "ods",
+      "odt",
+      "odp"
+   ]
+}
