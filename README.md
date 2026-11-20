@@ -1,7 +1,7 @@
 Zip and ODS (ODF) data reader from binary `bytea` data for PostgreSQL
 =====================================================================
 
-This is a [PostgreSQL](https://www.postgresql.org/) extension which allows to read compressed ZIP data stored as compressed values `bytea` in PostgreSQL. This FDW works with all of PostgreSQL 16+ and confirmed with libzip4 and libxml2.
+This is a [PostgreSQL](https://www.postgresql.org/) extension which allows to read compressed ZIP data stored `bytea` value in PostgreSQL. This FDW works with all of PostgreSQL 16+ and confirmed with libzip4 and libxml2.
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/2/29/Postgresql_elephant.svg" align="center" height="100" alt="PostgreSQL"/>	+	<img src="img_logo/logo-zip.svg" align="center" height="100" alt="ZIP"/>+	<img src="img_logo/logo-ods.png" align="center" height="100" alt="ODS"/>
 
@@ -28,8 +28,10 @@ Features
 
 ### Common features
 
-This extension reads decompressed data from a `bytea` data value in a PostgreSQL
-database which represents ZIP archive. 
+This extension reads decompressed data from a ZIP archive represented as `bytea` value in a PostgreSQL.
+
+Included special function for fast ODS spreadsheet decomposition to per-row
+cell `text` array, based on pointed ODF `<table>` XML node.
 
 Also see [Limitations](#limitations)
 
@@ -46,8 +48,8 @@ Installation
 
 There are no Linux distributives contains internal package with `bytea_unzip`.
 
-Known special runtime dependency: `libzip4t64` or similar for your OS
-Use `apt-get install libzip4t64` to install this.
+Known special runtime dependencies: `libzip4t64` and `libxml2` or similar for your OS
+Use `apt-get install libzip4t64 libxml2` to install this.
 
 ### Source installation
 

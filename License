@@ -1,8 +1,8 @@
-EXIF data extractor for PotgreSQL bytea data
+Zip and ODS (ODF) data reader from binary `bytea` data for PostgreSQL
 
 Licensed under PostgreSQL license, see https://opensource.org/license/postgresql
 
-Copyright (c) 2025, mkgrgis
+Copyright (c) 2026, mkgrgis
 
 Permission to use, copy, modify, and distribute this software and its
 documentation for any purpose, without fee, and without a written agreement is
